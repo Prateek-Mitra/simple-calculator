@@ -1,0 +1,87 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72 50%, #2a5298 50%);
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    font-size: 2.5em;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.btn:active {
+    background-color: #388E3C; /* Even darker green */
+    transform: scale(0.95);
+}
+
+.btn.operator {
+    background-color: #FF5722; /* Orange background */
+}
+
+.btn.operator:hover {
+    background-color: #E64A19; /* Darker orange */
+}
+
+.btn.operator:active {
+    background-color: #D84315; /* Even darker orange */
+}
+
+.btn.special {
+    background-color: #9C27B0; /* Purple background */
+}
+
+.btn.special:hover {
+    background-color: #8E24AA; /* Darker purple */
+}
+
+.btn.special:active {
+    background-color: #7B1FA2; /* Even darker purple */
+}
+
+.btn[colspan="2"] {
+    grid-column: span 2;
+}
+
+.btn[rowspan="2"] {
+    grid-row: span 2;
+}
